@@ -140,6 +140,7 @@ body {
 
 .mobile-nav-dropdown:hover > .mobile-nav-content {
   display: block;
+  cursor: pointer;
 }
 
 /* === HEADER BANNER === */
