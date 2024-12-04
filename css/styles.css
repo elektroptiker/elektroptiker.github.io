@@ -109,7 +109,6 @@ body {
   position: relative;
   margin-top: 6px;
   margin-bottom: 7px;
-  cursor: pointer;
 }
 
 .mobile-nav-button > span {
@@ -130,7 +129,6 @@ body {
 .mobile-nav-dropdown {
   position: relative;
   float: right;
-  cursor: pointer;
 }
 
 .mobile-nav-content {
