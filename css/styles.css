@@ -129,6 +129,7 @@ body {
 .mobile-nav-dropdown {
   position: relative;
   float: right;
+  cursor: pointer;
 }
 
 .mobile-nav-content {
@@ -140,7 +141,6 @@ body {
 
 .mobile-nav-dropdown:hover > .mobile-nav-content {
   display: block;
-  cursor: pointer;
 }
 
 /* === HEADER BANNER === */
