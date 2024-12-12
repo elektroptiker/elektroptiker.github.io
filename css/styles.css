@@ -386,6 +386,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
   padding-left: 1rem;
   padding-bottom: 1rem;
 }
+.project-box::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 @media only screen and (min-width: 768px) {
   #flex-row {
