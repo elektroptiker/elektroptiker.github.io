@@ -71,7 +71,7 @@
           </header>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="flex-row">
         <div class="col-3">
           <article class="project-box">
             <h2>HB9GL-R Telemetry</h2>
@@ -93,13 +93,23 @@
         <div class="col-3">
           <article class="project-box">
             <h2>Door 5a</h2>
+            <div>
+              <video controls loop muted autoplay>
+                <source src="img/Door5a.mp4" type="video/mp4" />
+                <p>Sorry, could not play the video file.</p>
+              </video>
+            </div>
             <p>
               This is an RFID door key which contains an RFID reader at the door
               powered by an ESP8266. And an
               <a href="https://docs.m5stack.com/en/core/M5Dial">M5Dial</a>
               acting as a server inside the house. They communicate via WiFi
-              using the ESPNow protocol. Because there are too many security
-              sensitive details in the code, it's not public - sorry.
+              using the
+              <a
+                href="https://www.espressif.com/en/solutions/low-power-solutions/esp-now"
+                >ESPNow protocol</a
+              >. Because there are too many security sensitive details in the
+              code, it's not public - sorry.
             </p>
           </article>
         </div>

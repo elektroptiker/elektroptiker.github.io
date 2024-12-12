@@ -319,8 +319,15 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 /* === PROJECTS PAGE === */
 
+#flex-row > [class*="col"] {
+  flex: 1;
+}
+
 .intro-container {
   text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro-container > h1 {
   text-transform: uppercase;
@@ -335,16 +342,19 @@ Extra large devices (large laptops and desktops, 1200px and up)
   background-color: var(--lightgrey);
   padding: 1rem 3rem 2.5rem;
   width: 90%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.project-box {
-  height: 100%;
+.project-box > p > a {
+  color: var(--blue);
+}
+.project-box > p > a:hover {
+  color: var(--linkhovercolor);
 }
 
 .project-box > a {
-  text-decoration: none;
   height: 2.5rem;
   border: 2px solid var(--bodybg);
   display: inline-block;
@@ -368,8 +378,19 @@ Extra large devices (large laptops and desktops, 1200px and up)
   color: var(--linkhovercolor);
   text-decoration: none;
 }
+.project-box > div > video {
+  /* border-radius: 50%; */
+  width: 50%;
+  height: auto;
+  float: right;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
 
 @media only screen and (min-width: 768px) {
+  #flex-row {
+    display: flex;
+  }
   #projects .row > .col-3:nth-of-type(even) > .project-box {
     margin-left: 1rem;
     margin-right: auto;
