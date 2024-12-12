@@ -1,16 +1,25 @@
 /*  === COLORS === */
-
 :root {
+  --bodybg: #ebebeb;
+  --textcolor: #2a2a2a;
+  --linkcolor: #212d78;
+  --linkhovercolor: #da6f39;
   --blue: #212d78;
   --orange: #da6f39;
   --darkgrey: #1e1e1e;
   --lightgrey: #686869;
   --headerbg: #a9b2bb;
+  color-scheme: light dark;
+  --bodybg: light-dark(#ebebeb, #262626);
+  --textcolor: light-dark(#2a2a2a, #b6b6b6);
+  --linkcolor: light-dark(#2e41b8, #606fcb);
 }
 
 /* === GLOBAL === */
 
 body {
+  background-color: var(--bodybg);
+  color: var(--textcolor);
   margin: 0;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
@@ -18,6 +27,28 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--lightgrey), 0 0 10px var(--lightgrey);
+}
+
+a:link {
+  color: var(--linkcolor);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--linkcolor);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--linkhovercolor);
+  text-decoration: none;
+}
+a:active {
+  color: var(--linkcolor);
+  text-decoration: none;
 }
 
 /* === GENERAL === */
@@ -42,6 +73,10 @@ body {
   font-family: "Consolas", "Courier New", "monospace";
   font-weight: bold;
   font-size: 1rem;
+}
+
+.header-nav a {
+  display: inline-block;
 }
 
 .header-nav a > img {
@@ -111,9 +146,9 @@ body {
   margin-bottom: 7px;
 }
 
-.mobile-nav-button > span {
+.mobile-nav-button > img {
   position: absolute;
-  bottom: 0px;
+  bottom: 8px;
   left: 7px;
 }
 
@@ -148,14 +183,14 @@ body {
   width: 100%;
   height: 0;
   padding-top: calc(100% / 1920 * 400);
-  background: url("../img/hintergrund.jpg");
+  background: url("../img/Elektroptiker_bg.png");
   background-size: contain;
 }
 .header-banner-small {
   width: 100%;
   height: 0;
   padding-top: calc(100% / 1920 * 300);
-  background: url("../img/hintergrund-klein.jpg");
+  background: url("../img/Elektroptiker_bg_small.png");
   background-size: contain;
 }
 
@@ -279,5 +314,68 @@ Extra large devices (large laptops and desktops, 1200px and up)
   }
   .col-3 {
     width: 100%;
+  }
+}
+
+/* === PROJECTS PAGE === */
+
+.intro-container {
+  text-align: center;
+}
+.intro-container > h1 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.intro-container > p {
+  font-size: 1.2rem;
+}
+
+.project-box {
+  color: var(--bodybg);
+  background-color: var(--lightgrey);
+  padding: 1rem 3rem 2.5rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-box {
+  height: 100%;
+}
+
+.project-box > a {
+  text-decoration: none;
+  height: 2.5rem;
+  border: 2px solid var(--bodybg);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+.project-box > a:link {
+  color: var(--bodybg);
+  text-decoration: none;
+}
+.project-box > a:visited {
+  color: var(--bodybg);
+  text-decoration: none;
+}
+.project-box > a:active {
+  color: var(--bodybg);
+  text-decoration: none;
+}
+.project-box > a:hover {
+  border: 2px solid var(--linkhovercolor);
+  color: var(--linkhovercolor);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #projects .row > .col-3:nth-of-type(even) > .project-box {
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+  #projects .row > .col-3:nth-of-type(odd) > .project-box {
+    margin-left: auto;
+    margin-right: 1rem;
   }
 }

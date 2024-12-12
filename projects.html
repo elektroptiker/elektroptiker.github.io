@@ -3,13 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-    <link
-      rel="icon"
-      href="favicon.ico"
-      sizes="16x16 32x32 48x48 64x64"
-      type="image/x-icon"
-    />
+    <title>Elektroptiker: Projects</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
 
@@ -40,7 +35,9 @@
             </a>
 
             <div class="mobile-nav-dropdown clearfix">
-              <div class="mobile-nav-button"><span>&equiv;</span></div>
+              <div class="mobile-nav-button">
+                <img src="img/menubutton.png" alt="&equiv;" />
+              </div>
               <div class="mobile-nav-content clearfix">
                 <ul>
                   <li><a href="index.html">Home</a></li>
@@ -59,4 +56,58 @@
 
     <header class="header-banner-small"></header>
   </body>
+  <!-- PROJECTS SECTION  -->
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <header class="intro-container">
+            <h1>My Projects</h1>
+            <p>
+              Here are a few of my latest projects. In future I try to publish
+              them on my
+              <a href="https://github.com/elektroptiker">GitHub</a> page.
+            </p>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <article class="project-box">
+            <h2>HB9GL-R Telemetry</h2>
+            <p>
+              The goal of this project was to have additional information in the
+              case of an EchoLink or computer failure at the HB9GL-R UHF
+              repeater.
+            </p>
+            <p>
+              LoRa APRS Telemetry project realized with a Liligo LoRa32 module.
+            </p>
+            <p>Including Windows application and housing.</p>
+            <a
+              href="https://github.com/elektroptiker/HB9GL-R-Monitoring-LoRa-Module"
+              >go to repository</a
+            >
+          </article>
+        </div>
+        <div class="col-3">
+          <article class="project-box">
+            <h2>Door 5a</h2>
+            <p>
+              This is an RFID door key which contains an RFID reader at the door
+              powered by an ESP8266. And an
+              <a href="https://docs.m5stack.com/en/core/M5Dial">M5Dial</a>
+              acting as a server inside the house. They communicate via WiFi
+              using the ESPNow protocol. Because there are too many security
+              sensitive details in the code, it's not public - sorry.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+  </section>
 </html>
