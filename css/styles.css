@@ -354,6 +354,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 #about-box img {
   float: left;
   width: 40%;
+  max-width: 300px;
   height: auto;
   margin-right: 2rem;
   margin-bottom: 1.5rem;
