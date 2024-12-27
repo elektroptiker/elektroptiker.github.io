@@ -193,6 +193,7 @@ a:active {
 /* === HEADER BANNER === */
 
 .header-banner {
+  margin-top: 50px;
   width: 100%;
   height: 0;
   padding-top: calc(100% / 1920 * 400);
@@ -200,6 +201,7 @@ a:active {
   background-size: contain;
 }
 .header-banner-small {
+  margin-top: 50px;
   width: 100%;
   height: 0;
   padding-top: calc(100% / 1920 * 300);
@@ -209,12 +211,18 @@ a:active {
 
 /* === FOOTER === */
 
+#spacer {
+  display: block;
+  clear: both;
+  height: 40px;
+}
+
 #footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
   background-color: var(--headerbg);
-  height: 2.8rem;
+  height: 40px;
   color: var(--darkgrey);
   font-size: 0.8rem;
 }
