@@ -23,16 +23,13 @@ body {
   margin: 0;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
+  min-width: 300px;
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/* :focus {
-  outline: none;
-  box-shadow: 0 0 0 2px va      r(--lightgrey), 0 0 10px var(--lightgrey);
-} */
 
 a:link {
   color: var(--linkcolor);
@@ -45,6 +42,8 @@ a:visited {
 a:hover {
   color: var(--linkhovercolor);
   text-decoration: none;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 a:active {
@@ -117,6 +116,8 @@ a:active {
 .header-nav ul > li > a:hover {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 .header-nav ul > li > a:active {
@@ -241,6 +242,8 @@ a:active {
 
 #footer-nav a:hover {
   color: var(--linkhovercolor);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -369,6 +372,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
   height: auto;
   margin-right: 2rem;
   margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -448,6 +453,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 .project-box > p > a:hover {
   color: var(--linkhovercolor);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -474,6 +481,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
   border: 2px solid var(--linkhovercolor);
   color: var(--linkhovercolor);
   text-decoration: none;
+  -webkit-transition: color 0.3s, border 0.3s;
+  -o-transition: color 0.3s, border 0.3s;
   transition: color 0.3s, border 0.3s;
 }
 .project-box > div > video {
@@ -494,6 +503,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 @media only screen and (min-width: 768px) {
   #flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #projects .row > .col-3:nth-of-type(even) > .project-box {
